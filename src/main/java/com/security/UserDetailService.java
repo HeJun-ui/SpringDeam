@@ -29,7 +29,7 @@ public class UserDetailService implements UserDetailsService {
         System.out.println(++num);
 
         User user = userService.getUserByname(username);
-
+          //如果输入不存在的用户名，这里应该是进去异常
         if (ObjectUtils.isEmpty(user)) {
             System.out.println("账号不存在 抛出异常");
             throw new RuntimeException("用户不存在");

@@ -9,8 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 
 /**
- * @author HeJun
- * @date 2022/12/22
+ *
  */
 @Data
 @NoArgsConstructor
