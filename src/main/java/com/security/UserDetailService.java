@@ -25,11 +25,10 @@ public class UserDetailService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) {
+        //打印执行次数
         System.out.println(++num);
-        User user;
 
-        //邮箱登录逻辑
-            user = userService.getUserByname(username);
+        User user = userService.getUserByname(username);
 
         if (ObjectUtils.isEmpty(user)) {
             System.out.println("账号不存在 抛出异常");
